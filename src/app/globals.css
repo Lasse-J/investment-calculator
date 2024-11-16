@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #283747;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +18,68 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+input {
+  width: calc(100% - 20px);
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+}
+
+.adjust-interest {
+    background-color: #888;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+}
+
+.adjust-interest:hover {
+    background-color: #fff;
+    color: #888;
+    border-color: #fff;
+}
+
+.adjust-inflation {
+    background-color: #888;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+}
+
+.adjust-inflation:hover {
+    background-color: #fff;
+    color: #888;
+    border-color: #fff;
 }
